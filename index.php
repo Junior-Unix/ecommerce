@@ -36,6 +36,18 @@ $app->get('/admin', function() {
 
 });
 
+$app->get('/admin/login', function() {
+
+	//Usado para testar *.html dentro da pasta views.
+	$page = new \Hcode\PageAdmin([
+		"header"=>false,
+		"footer"=>false
+	]);
+
+	$page->setTpl("login");
+
+});
+
 $app->run();
 
  ?>
