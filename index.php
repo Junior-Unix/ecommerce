@@ -2,6 +2,10 @@
 
 require_once("vendor/autoload.php");
 
+use \Slim\Slim;
+use \Hcode\Page;
+use \Hcode\PageAdmin;
+
 $app = new \Slim\Slim();
 
 $app->config('debug', true);
@@ -26,7 +30,7 @@ $app->get('/', function() {
 $app->get('/admin', function() {
 
 	//Usado para testar *.html dentro da pasta views.
-	$page = new Hcode\PageAdmin();
+	$page = new \Hcode\PageAdmin();
 
 	$page->setTpl("index");
 
