@@ -69,6 +69,40 @@ $app->get('/admin/logout', function() {
 
 });
 
+$app->get('/admin/users', function() {
+
+	User::verifyLogin();
+
+	$page = new \Hcode\PageAdmin([
+	
+	$page->setTpl("users");
+	]);
+
+});
+
+$app->get('/admin/create', function() {
+
+	User::verifyLogin();
+
+	$page = new \Hcode\PageAdmin([
+	
+	$page->setTpl("users-create");
+	]);
+
+});
+
+$app->get('/admin/users/:iduser', function($iduser) {
+
+	User::verifyLogin();
+
+	$page = new \Hcode\PageAdmin([
+	
+	$page->setTpl("users-update");
+	]);
+
+});
+
+
 $app->run();
 
  ?>
