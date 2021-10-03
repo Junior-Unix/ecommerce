@@ -29,6 +29,8 @@ $app->get('/', function() {
 });
 
 $app->get('/admin', function() {
+	
+	User::verifyLogin();
 
 	//Usado para testar *.html dentro da pasta views.
 	$page = new \Hcode\PageAdmin();
