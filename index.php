@@ -12,7 +12,7 @@ $app->get('/', function() {
 
 	$results = $sql->select("SELECT * FROM tb_users");
 
-	echo jason_encode($results);
+	echo json_encode($results);
 
 });
 
