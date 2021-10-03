@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 require_once("vendor/autoload.php");
 
 use \Slim\Slim;
@@ -29,7 +29,7 @@ $app->get('/', function() {
 });
 
 $app->get('/admin', function() {
-	
+
 	User::verifyLogin();
 
 	//Usado para testar *.html dentro da pasta views.
