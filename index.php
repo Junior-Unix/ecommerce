@@ -23,6 +23,15 @@ $app->get('/', function() {
 */
 });
 
+$app->get('/admin', function() {
+
+	//Usado para testar *.html dentro da pasta views.
+	$page = new Hcode\PageAdmin();
+
+	$page->setTpl("index");
+
+});
+
 $app->run();
 
  ?>
