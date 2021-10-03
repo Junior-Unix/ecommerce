@@ -17,10 +17,10 @@ $app->get('/', function() {
 //foi usado para testar o banco de dados. Ok!   
 	$sql = new Hcode\DB\Sql();
 
-	$results = $sql->select("SELECT * FROM tb_users"); */
+	$results = $sql->select("SELECT * FROM tb_users"); 
 
 	echo json_encode($results);
-
+*/
 });
 
 $app->run();
