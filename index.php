@@ -73,10 +73,7 @@ $app->get('/admin/users', function() {
 
 	User::verifyLogin();
 
-	$page = new \Hcode\PageAdmin([
-	
-	$page->setTpl("users");
-	]);
+	$page = new \Hcode\PageAdmin();
 
 });
 
@@ -84,10 +81,7 @@ $app->get('/admin/create', function() {
 
 	User::verifyLogin();
 
-	$page = new \Hcode\PageAdmin([
-	
-	$page->setTpl("users-create");
-	]);
+	$page = new \Hcode\PageAdmin();
 
 });
 
@@ -95,10 +89,7 @@ $app->get('/admin/users/:iduser', function($iduser) {
 
 	User::verifyLogin();
 
-	$page = new \Hcode\PageAdmin([
-	
-	$page->setTpl("users-update");
-	]);
+	$page = new \Hcode\PageAdmin();
 
 });
 

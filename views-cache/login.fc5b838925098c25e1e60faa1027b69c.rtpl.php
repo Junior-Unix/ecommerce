@@ -27,13 +27,13 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="/res/admin"><b>Admin</b>LTE</a>
+    <a href="/views/admin"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="/res/admin/" method="post">
+    <form action="/views/admin/" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" placeholder="Login" name="deslogin">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
